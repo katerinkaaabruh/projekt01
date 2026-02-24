@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<header>
+<header class="hero-header">
     <h1>Karlova Studánka</h1>
     <p>Lázeňská obec v srdci Jeseníků</p>
 </header>
@@ -25,37 +25,52 @@
     <h2>Lázeňské domy</h2>
     <div class="gallery">
         <div class="gallery-item">
-            <img src="https://www.horskelazne.cz/file/eo/andr6377.jpg?path=1%2F528.jpg" alt="Knížecí dům, dnes ředitelství lázní (1832–1833)">
+            <img src="https://www.horskelazne.cz/file/eo/andr6377.jpg?path=1%2F528.jpg" alt="Knížecí dům, dnes ředitelství lázní (1832–1833)" onclick="openImage(this)">
             <p>Knížecí dům, dnes ředitelství lázní (1832–1833)</p>
         </div>
         <div class="gallery-item">
-            <img src="https://images.static-hotel.cz/images/photos/hotel/27803/20210908140324_gW7OJF.jpg" alt="Lázeňský dům Libuše pohledem od Letních lázní">
+            <img src="https://images.static-hotel.cz/images/photos/hotel/27803/20210908140324_gW7OJF.jpg" alt="Lázeňský dům Libuše pohledem od Letních lázní" onclick="openImage(this)">
             <p>Lázeňský dům Libuše pohledem od Letních lázní</p>
         </div>
         <div class="gallery-item">
-            <img src="https://images.static-hotel.cz/ir/images/photos/hotel/27838/20131118135324_W7o9M1--c510x320.jpg" alt="Vila Vlasta (1893–1894, dříve vila Wilhelm)">
+            <img src="https://images.static-hotel.cz/ir/images/photos/hotel/27838/20131118135324_W7o9M1--c510x320.jpg" alt="Vila Vlasta (1893–1894, dříve vila Wilhelm)" onclick="openImage(this)">
             <p>Vila Vlasta (1893–1894, dříve vila Wilhelm)</p>
         </div>
     </div>
 </section>
 
-   <section class="gallery-section">
+<section class="gallery-section">
     <h2>Jiné zajímavosti</h2>
     <div class="gallery">
         <div class="gallery-item">
-            <img src="https://luhacovice.cz/wp-content/uploads/2020/09/dr.stastneho.jpg" alt="Minerální pramen Petr">
+            <img src="https://luhacovice.cz/wp-content/uploads/2020/09/dr.stastneho.jpg" alt="Minerální pramen Petr" onclick="openImage(this)">
             <p>Minerální pramen Petr</p>
         </div>
         <div class="gallery-item">
-            <img src="https://img.obrazky.cz/?url=79495b0de0a2210e&size=2" alt="Hudební hala (1836–1837)">
+            <img src="https://img.obrazky.cz/?url=79495b0de0a2210e&size=2" alt="Hudební hala (1836–1837)" onclick="openImage(this)">
             <p>Hudební hala (1836–1837)</p>
         </div>
         <div class="gallery-item">
-            <img src="https://www.stavebnictvi3000.cz/images/resized/2020/07/640x-fit/Kaple%20sv.Huberta2.JPG" alt="Kaple sv. Huberta z 18. století">
+            <img src="https://www.stavebnictvi3000.cz/images/resized/2020/07/640x-fit/Kaple%20sv.Huberta2.JPG" alt="Kaple sv. Huberta z 18. století" onclick="openImage(this)">
             <p>Kaple sv. Huberta z 18. století</p>
         </div>
     </div>
 </section>
+
+<div id="overlay" onclick="closeImage()">
+    <img id="fullImage">
+</div>
+
+<script>
+function openImage(img) {
+    document.getElementById("overlay").style.display = "flex";
+    document.getElementById("fullImage").src = img.src;
+}
+
+function closeImage() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
 </main>
 <footer>
     <p>© 2026 Karlova Studánka – školní projekt</p>
@@ -63,3 +78,4 @@
 
 </body>
 </html>
+
