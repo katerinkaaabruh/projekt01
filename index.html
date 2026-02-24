@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <title>Karlova Studánka</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Doporučený reset marginů a paddingů, aby nezůstávaly mezery */
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <img src="https://play-lh.googleusercontent.com/AVRJeZBJCDlNJExauP2sRxxAaKXTNGMyUeowEnf7grgOyvdj8HQABXL4Yxf9g0brJV4" alt="Logo" class="logo">
+
+    <header class="hero-header">
         <h1>Karlova Studánka</h1>
         <p>Lázeňská obec v srdci Jeseníků</p>
     </header>
@@ -22,12 +29,13 @@
     <main>
         <section>
             <h2>Základní informace</h2>
-        <p>
-            Karlova Studánka je lázeňská obec v okrese Bruntál,
-            ležící v nadmořské výšce přibližně 800 m n. m.
-            Je známá nejčistším vzduchem v České republice
-            a byla vyhlášena vesnickou památkovou zónou.
-        </p>
+
+            <p>
+                Karlova Studánka je lázeňská obec v okrese Bruntál,
+                ležící v nadmořské výšce přibližně 800 m n. m.
+                Je známá nejčistším vzduchem v České republice
+                a byla vyhlášena vesnickou památkovou zónou.
+            </p>
 
             <div class="image-block">
                 <img src="https://www.laznetravel.cz/w1920/horske-lazne-karlova-studanka-18738.jpg" alt="Horské lázně Karlova Studánka">
@@ -42,33 +50,34 @@
         </section>
 
         <section>
-        <h2>Vývoj počtu obyvatel</h2>
+            <h2>Vývoj počtu obyvatel</h2>
 
-        <table>
-            <tr>
-                <th>Rok</th>
-                <th>Počet obyvatel</th>
-            </tr>
-            <tr><td>1869</td><td>50</td></tr>
-            <tr><td>1880</td><td>42</td></tr>
-            <tr><td>1890</td><td>50</td></tr>
-            <tr><td>1900</td><td>45</td></tr>
-            <tr><td>1910</td><td>67</td></tr>
-            <tr><td>1921</td><td>71</td></tr>
-            <tr><td>1930</td><td>149</td></tr>
-            <tr><td>1950</td><td>331</td></tr>
-            <tr><td>1961</td><td>230</td></tr>
-            <tr><td>1970</td><td>244</td></tr>
-            <tr><td>1980</td><td>261</td></tr>
-            <tr><td>1991</td><td>228</td></tr>
-            <tr><td>2001</td><td>230</td></tr>
-        </table>
-    </section>
+            <table>
+                <tr>
+                    <th>Rok</th>
+                    <th>Počet obyvatel</th>
+                </tr>
+                <tr><td>1869</td><td>50</td></tr>
+                <tr><td>1880</td><td>42</td></tr>
+                <tr><td>1890</td><td>50</td></tr>
+                <tr><td>1900</td><td>45</td></tr>
+                <tr><td>1910</td><td>67</td></tr>
+                <tr><td>1921</td><td>71</td></tr>
+                <tr><td>1930</td><td>149</td></tr>
+                <tr><td>1950</td><td>331</td></tr>
+                <tr><td>1961</td><td>230</td></tr>
+                <tr><td>1970</td><td>244</td></tr>
+                <tr><td>1980</td><td>261</td></tr>
+                <tr><td>1991</td><td>228</td></tr>
+                <tr><td>2001</td><td>230</td></tr>
+            </table>
+        </section>
 
     </main>
 
     <footer>
         <p>© 2026 Karlova Studánka – školní projekt</p>
     </footer>
+
 </body>
 </html>
